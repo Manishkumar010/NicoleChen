@@ -12,36 +12,9 @@ function raf(time) {
 requestAnimationFrame(raf)
 
 const stickyElement = document.querySelector("header");
-let imageshow = document.querySelectorAll('.imageShow')
 let hoverbtn = document.querySelector('#first-drop-box')
 let hoverbtn2 = document.querySelector('#second-drop-box')
 let dropdwonmenu2 = document.querySelector('main')
-
-
-
-imageshow[0].addEventListener('mouseenter',function(){
-    gsap.to('.main-conatner .right-box img:nth-child(1)',{
-        display: 'block',
-        duration: 0.5,
-    })
-})
-imageshow[0].addEventListener('mouseleave',function(){
-    gsap.to('.main-conatner .right-box img:nth-child(1)',{
-        display: 'none',
-    })
-})
-imageshow[1].addEventListener('mouseenter',function(){
-    gsap.to('.main-conatner .right-box img:nth-child(2)',{
-        display: 'block',
-        duration: 0.5,
-    })
-})
-imageshow[1].addEventListener('mouseleave',function(){
-    gsap.to('.main-conatner .right-box img:nth-child(2)',{
-        display: 'none',
-    })
-})
-
 
 
 
