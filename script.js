@@ -1,22 +1,6 @@
-const lenis = new Lenis()
 
-lenis.on('scroll', (e) => {
-  console.log(e)
-})
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
-
-const stickyElement = document.querySelector("header");
-let hoverbtn = document.querySelector('#first-drop-box')
-let hoverbtn2 = document.querySelector('#second-drop-box')
-let dropdwonmenu2 = document.querySelector('main')
-
-
+function header(){
+    const stickyElement = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY) {
@@ -26,25 +10,85 @@ window.addEventListener("scroll", () => {
     }
 });
 
+}
+header()
 
-hoverbtn.addEventListener('mouseenter',function(){
-    gsap.to('.drop-dwon-menu',{
-        top: '0',
-    })
-})
-dropdwonmenu2.addEventListener('mouseleave',function(){
-    gsap.to('.drop-dwon-menu',{
-        top: '-1000px',
-    })
-})
+function cursorAnimation(){
+    var page1Content = document.querySelector("#page1-content");
+var cursor = document.querySelector("#cursor");
 
-hoverbtn2.addEventListener('mouseenter',function(){
-    gsap.to('.drop-down-menu-second ',{
-        top: '0',
+
+page1Content.addEventListener("mousemove",function(dets){
+    gsap.to(cursor,{
+        x:dets.x,
+        y:dets.y,
     })
-})
-dropdwonmenu2.addEventListener('mouseleave',function(){
-    gsap.to('.drop-down-menu-second',{
-        top: '-1000px',
+});
+page1Content.addEventListener("mouseenter",function(){
+    gsap.to(cursor,{
+        scale:1,
+        opacity:1
     })
-})
+});
+page1Content.addEventListener("mouseleave",function(){
+    gsap.to(cursor,{
+        scale:0,
+        opacity:0
+    })
+});
+};
+cursorAnimation()
+
+
+
+ function loaderAnimation(){
+    var tl = gsap.timeline()
+
+ tl.from("#loader h3",{
+    x:50,
+    opacity:0,
+    duration:1.5,
+    delay:0.6,
+    stagger:0.2
+ })
+ tl.to("#loader h3",{
+    opacity:0,
+    y:30,
+    duration:1,
+    stagger:0.2
+ })
+ tl.to("#loader",{
+    opacity:0
+ })
+ tl.from("#page1-content h1 span",{
+    y:100,
+    opacity:0,
+    stagger:0.1,
+    duration:0.5,
+    delay:-0.5
+ })
+ tl.to("#loader",{
+    display:"none"
+ })
+ }
+
+ loaderAnimation()
+
+function page3ContentAnimation(){
+    gsap.from("#page3-top h2",{
+        y:120,
+        duration:1,
+        opacity:0,
+        stagger:0.3,
+        scrollTrigger:{
+            trigger:"#page3",
+            scroller:"body",
+            // markers:true,
+            start:"top 40%",
+            end:"top 37%",
+            scrub:2
+        }
+    })
+}
+page3ContentAnimation()
+
