@@ -7,12 +7,11 @@
     <title>Nicole Chen</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./product.css">
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -43,7 +42,7 @@
                     </a>
 
                     <a href="./blog.html">
-                        <h3>Blog</h3>
+                        <h3 class="active">Upcoming Source</h3>
                     </a>
 
                     <a href="./services.html">
@@ -55,16 +54,26 @@
                         <h3 id="second-drop-box">About & Connect
                         </h3>
                     </a>
+                    <span class="closenav">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="#f08e80">
+                            <path
+                                d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                            </path>
+                        </svg>
+                    </span>
                 </div>
+                <span class="opennav">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                        fill="#f08e80">
+                        <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                    </svg>
+                </span>
             </header>
 
 
             <div class="heading-box blog-img">
-                <h1 style="color: white;width: 30%;">More Blog Posts</h1>
-                <div>
-                    <button class="button2">Search More</button>
-
-                </div>
+         
             </div>
         </div>
 
@@ -73,33 +82,29 @@
         <div class="blog-container">
             <div class="blog-con1">
                 <div class="box1">
-                    <img src="https://images.squarespace-cdn.com/content/v1/624b503bbc0ab830d05ad066/1649102911858-9WTY8N5OB1NLZ6RX2NI3/Aro+Ha_0387.jpg?format=1500w"
+                    <img src="./assests/1.png"
                         alt="...">
-                    <span>9/3/2025</span>
                     <h3>Meditation and mindfulness</h3>
                     <a href="#">Read More</a>
                 </div>
                 <div class="box2">
-                    <img src="https://images.squarespace-cdn.com/content/v1/624b503bbc0ab830d05ad066/1649102911945-5ZSBSBYG8CGD66YU27UV/Aro-Ha_0701-copy.jpg?format=1500w"
+                    <img src="./assests/3.png"
                         alt="...">
-                    <span>9/3/2025</span>
                     <h3>A room with a view</h3>
                     <a href="#">Read More</a>
                 </div>
             </div>
             <div class="blog-con1">
                 <div class="box1 cut-image">
-                    <img src="https://images.squarespace-cdn.com/content/v1/624b503bbc0ab830d05ad066/1649102911844-ZN3PSV0A8WI58QEVDBG8/Large+JPG-20140301_Trade+151_0206.jpg?format=1500w"
+                    <img src="./assests/5.png"
                         alt="...">
-                    <span>9/3/2025</span>
                     <h3>On a mountain, over the sea
                     </h3>
                     <a href="#">Read More</a>
                 </div>
                 <div class="box2">
-                    <img src="https://images.squarespace-cdn.com/content/v1/624b503bbc0ab830d05ad066/1649102912053-PAT7HJKAE6R4QSL26SOT/20140302_Trade-151_0401-copy.jpg?format=1500w"
+                    <img src="./assests/4.png"
                         alt="...">
-                    <span>9/3/2025</span>
                     <h3>Pure bliss
                     </h3>
                     <a href="#">Read More</a>
@@ -107,9 +112,8 @@
             </div>
             <div class="blog-con1" style="height: 0vh;" id="use0vh">
                 <div class="box1 cut-image2">
-                    <img src="https://images.squarespace-cdn.com/content/v1/624b503bbc0ab830d05ad066/1649102912029-NLS9XNXYIQ5C3WTTSIQ0/20140301_Trade-151_0181-copy.jpg?format=1500w"
+                    <img src="./assests/6.png"
                         alt="...">
-                    <span>9/3/2025</span>
                     <h3>Much needed rest</h3>
                     <a href="#">Read More</a>
                 </div>
@@ -118,16 +122,14 @@
 
             <div class="blog-con1">
                 <div class="box2">
-                    <img src="https://images.squarespace-cdn.com/content/v1/624b503bbc0ab830d05ad066/1649102911994-WY1G74W7TUDFECVC2I7A/20140302_trade-151_0807-copy.jpg?format=1500w"
+                    <img src="./assests/7.png"
                         alt="...">
-                    <span>9/3/2025</span>
                     <h3>A room with a view</h3>
                     <a href="#">Read More</a>
                 </div>
                 <div class="box1">
-                    <img src="https://images.squarespace-cdn.com/content/v1/624b503bbc0ab830d05ad066/1649102911977-3LGHTTXSDU6ZNS46YB7S/Aro-Ha_0986-copy.jpg?format=1500w"
+                    <img src="./assests/nicoleImg1.jpeg"
                         alt="...">
-                    <span>9/3/2025</span>
                     <h3>Finding serenity</h3>
                     <a href="#">Read More</a>
                 </div>
@@ -138,14 +140,12 @@
                 <div class="box1">
                     <img src="https://images.squarespace-cdn.com/content/v1/624b503bbc0ab830d05ad066/1649102911915-YAAJWU11BTD5MQ2OQ3OD/Large+JPG-Aro+Ha_0428.jpg?format=1500w"
                         alt="...">
-                    <span>9/3/2025</span>
                     <h3>Everything you need</h3>
                     <a href="#">Read More</a>
                 </div>
                 <div class="box1 cut-image">
                     <img src="https://images.squarespace-cdn.com/content/v1/624b503bbc0ab830d05ad066/1649102911891-RN5HR08VFT0U8HFYCUCH/Large+JPG-Aro+Ha_0010.jpg?format=1500w"
                         alt="...">
-                    <span>9/3/2025</span>
                     <h3>Meditation and mindfulness</h3>
                     <a href="#">Read More</a>
                 </div>

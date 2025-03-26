@@ -6,21 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nicole Chen</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./home.css">
 </head>
 
 <body>
-    <div id="loader">
+    <!-- <div id="loader">
         <h3>Tomorrow’s</h3>
         <h3>Brands</h3>
         <h3>Today</h3>
-    </div>
+    </div> -->
 
     <main>
         <div id="main">
@@ -45,11 +46,11 @@
                     </div>
                     <div class="second-box">
                         <a href="index.html">
-                            <h3>Home</h3>
+                            <h3 class="active">Home</h3>
                         </a>
 
                         <a href="./blog.html">
-                            <h3>Blog</h3>
+                            <h3>Upcoming Source</h3>
                         </a>
 
                         <a href="./services.html">
@@ -61,14 +62,28 @@
                             <h3 id="second-drop-box">About & Connect
                             </h3>
                         </a>
+                        <span class="closenav">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                                fill="#f08e80">
+                                <path
+                                    d="M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z">
+                                </path>
+                            </svg>
+                        </span>
                     </div>
+                    <span class="opennav">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32"
+                            fill="#f08e80">
+                            <path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path>
+                        </svg>
+                    </span>
                 </header>
             </div>
             <div id="page1">
                 <div id="cursor">
                     <h5>Play reels</h5>
                 </div>
-                <video autoplay loop muted src="./assests/videoplayback.webm"></video>
+                <video autoplay loop muted src="./assests/videoplayback.mp4"></video>
                 <div id="page1-content">
                     <nav>
 
@@ -105,7 +120,7 @@
                     </div>
                     <div class="box">
                         <img src="./assests/Nicole2.jpg" alt="truck image">
-                        <video autoplay loop muted src="./assests/videoplayback.webm"></video>
+                        <video autoplay loop muted src="./assests/videoplayback.mp4"></video>
                     </div>
                 </div>
             </div>
@@ -150,12 +165,12 @@
             </div>
             <div class="main-conatner">
                 <div class="navigationmenu__col useHover">
-                    <a href="/" class="imageShow">Dubai<span class="arro12">→</span></a>
-                    <a href="./services.html" class="imageShow">Thailand<span class="arro12">→</span></span></a>
-                    <a href="/" class="imageShow">New York<span class="arro12">→</span></a>
-                    <a href="/" class="imageShow">Japan<span class="arro12">→</span></a>
-                    <a href="/" class="imageShow">America<span class="arro12">→</span></a>
-                    <a href="/" class="imageShow">China<span class="arro12">→</span></a>
+                    <a href="#" class="imageShow">Dubai<span class="arro12">→</span></a>
+                    <a href="#" class="imageShow">Thailand<span class="arro12">→</span></span></a>
+                    <a href="#" class="imageShow">New York<span class="arro12">→</span></a>
+                    <a href="#" class="imageShow">Japan<span class="arro12">→</span></a>
+                    <a href="#" class="imageShow">America<span class="arro12">→</span></a>
+                    <a href="#" class="imageShow">China<span class="arro12">→</span></a>
                     <img src="./assests/1.png" alt="..." class="image-1 hideimg">
                     <img src="./assests/3.png" alt="..." class="image-2 hideimg">
                     <img src="./assests/4.png" alt="..." class="image-3 hideimg">
@@ -191,7 +206,6 @@
                     <button class="button2">Explore Content</button>
                 </div>
                 <div class="text-box22">
-                    <video src="./assests/video11.mp4" autoplay loop muted></video>
                     <img src="./assests/1.png" class="image22" alt="Schedule">
                 </div>
             </div>
@@ -214,14 +228,15 @@
         <!-- another last section -->
         <section class="bg-white dark:bg-gray-900">
             <div class=" px-6 py-10 mx-auto">
-                <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Portfolio
+                <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+                    Portfolio
                 </h1>
-        
+
                 <p class="mt-4 text-center text-gray-500 dark:text-gray-300">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quam voluptatibus
                 </p>
-        
-        
+
+
                 <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
                     <div class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
                         style="background-image:url('./assests/4.png')">
@@ -231,7 +246,7 @@
                             <p class="mt-2 text-lg tracking-wider text-blue-400 uppercase ">Website</p>
                         </div>
                     </div>
-        
+
                     <div class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
                         style="background-image:url('./assests/3.png')">
                         <div
@@ -240,7 +255,7 @@
                             <p class="mt-2 text-lg tracking-wider text-blue-400 uppercase ">How is going</p>
                         </div>
                     </div>
-        
+
                     <div class="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
                         style="background-image:url('./assests/1.png')">
                         <div

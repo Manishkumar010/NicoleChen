@@ -174,7 +174,7 @@ nav h4{
     }
 
     #page1-content h1 span {
-        font-size: 18vw;
+        font-size: 15vw;
     }
 
     #cursor {
@@ -205,12 +205,14 @@ nav h4{
     }
 
     #page3-top h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     #page3-elements .box {
-        height: 100%;
-        width: 100%;
+        height: 40vh;
+        width: 90%;
+        margin: auto;
+        margin-top: 1em;
     }
 
     #page3-elements {
