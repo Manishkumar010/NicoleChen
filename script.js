@@ -9,6 +9,11 @@ closeNav.addEventListener("click", function () {
     header.classList.remove("active")
 })
 
+let header2 = document.querySelector("header");
+
+window.addEventListener("scroll",function(){
+    header2.style.backgroundColor = window.scrollY > 100 ? "#000" : "";
+})
 function cursorAnimation() {
     var page1Content = document.querySelector("#page1-content");
     var cursor = document.querySelector("#cursor");
